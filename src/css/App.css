@@ -1,0 +1,322 @@
+body {
+    font-family: "Rubik", Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+    padding-top: 50px;
+    background: linear-gradient(to left, rgb(0, 238, 255), rgb(4, 19, 46));
+}
+
+h1 {
+    color: rgb(20, 27, 86);
+}
+
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-center-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-left-row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.image-box {
+    width: auto;
+    height: 190px;
+    top: 20px;
+    background-color: rgb(2, 24, 94);
+    border: 3px solid rgb(8, 7, 54);
+    border-bottom: 7px solid rgb(0, 69, 188);
+    border-radius: 50%;
+}
+
+.image {
+    border-radius: 50px;
+    width: 200px;
+    height: 214px;
+    z-index: 1000;
+}
+
+
+.link-box {
+    width: 100%;
+    padding: 10px;
+}
+
+.link-box button {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 24, 94);
+    border-bottom: 5px solid rgb(62, 133, 255);
+    border-top: 2px solid rgb(0, 69, 188);
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 140px;
+    margin-top: -25px;
+    z-index: 1000;
+    height: 40px;
+}
+
+.link-box button:hover {
+    font-size: 1em;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    background-color: rgb(62, 133, 255);
+    border-bottom: 5px solid rgb(0, 69, 188);
+    border-top: 2px solid rgb(62, 133, 255);
+    margin: 5px;
+    margin-top: -25px;
+    cursor: pointer;
+    width: 140px;
+    z-index: 1000;
+    height: 40px;
+}
+
+
+
+.content {
+    width: 100%;
+    height: 150px;
+    z-index: -10000;
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(6, 9, 53, 1);
+}
+
+.heading {
+    width: 100%;
+    height: 50px;
+    color: rgb(0, 38, 255);
+}
+
+.subheading {
+    width: 100%;
+    margin: 3px;
+    font-weight: lighter;
+    height: 20px;
+    color: rgb(9, 10, 68);
+}
+
+.small-margin {
+    margin: 20px;
+}
+
+.navbar-container {
+    background: linear-gradient(to top, rgb(32, 32, 32), rgb(17, 17, 17));
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.menu-toggler {
+    background-image: url("../assets/white-shaded-menu-icon.png");
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    color: rgb(0, 32, 86);
+    padding: 10px;
+}
+
+.menu-toggler:hover {
+    background-image: url("../assets/white-shaded-menu-icon.png");
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    position: fixed;
+    cursor: pointer;
+    right: 25px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    color: rgb(0, 32, 86);
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-text {
+    margin-top: 32px;
+    margin-left: -10px;
+    color: white;
+    font-weight: 500;
+}
+
+.logo-box {
+    width: 100%;
+    height: auto;
+    padding-left: 5px;
+
+}
+
+.menu-expanded {
+    position: absolute;
+    top: 150px;
+    padding: 25px 50px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    border: .5px solid rgb(48, 48, 48);
+    background-color: rgb(29, 29, 29);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
+}
+
+.close-button {
+    background-color: firebrick;
+    margin-top: 25px;
+    color: white;
+    font-weight: 900;
+    font-size: 1em;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    padding: 6px 14px;
+}
+
+.close-button:hover {
+    background-color: rgb(135, 0, 0);
+    color: rgb(255, 255, 168);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    right: 10px;
+}
+
+.menu-button {
+    margin-bottom: 10px;
+    left: 10px;
+    font-size: 1.5em;
+    padding: 6px 17px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 900;
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgb(22, 56, 78);
+    color: rgb(255, 255, 255);
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgb(0, 119, 130);
+    color: rgb(0, 255, 221);
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    margin-top: -5px;
+}
+
+.close-icon {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.close-icon:hover {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.welcome-container {
+    top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+    padding-left: 30px;
+    position: absolute;
+    background-color: rgb(0, 26, 44);
+    border: 1px solid aqua;
+    width: 100%;
+    height: fit-content;
+    text-wrap: balance;
+}
+
+.welcome-title {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+    color: rgb(95, 255, 226);
+}
+
+.welcome-text {
+    color: rgb(227, 252, 255);
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.button-box button {
+    margin-left: -3px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.2em;
+    background-color: rgb(43, 43, 43);
+    border: 1px solid aquamarine;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+.button-box button:hover {
+    margin-left: -3px;
+    color: rgb(0, 255, 157);
+    font-weight: 800;
+    font-size: 1.2em;
+    background-color: rgb(8, 42, 55);
+    border: 1px solid rgb(127, 255, 238);
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+.move-to-front {
+    z-index: 10000000;
+}
+
+.line-gif {
+    background-image: url("../assets/line copy 4.gif");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    height: 1000px;
+}
